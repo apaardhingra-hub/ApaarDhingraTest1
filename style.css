@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    height: 300px;
+    background: url('./images/cover_photo.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.profile-info {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info h2 {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.profile-info .location {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    border-bottom: 3px solid #0056b3;
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #0056b3;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.job .company, .job .date {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    margin-bottom: 5px;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 20px;
+    border-top: 5px solid #007bff;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 200px;
+    }
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+    .profile-info h2 {
+        font-size: 1rem;
+    }
+    main {
+        padding: 0 10px;
+    }
+}
